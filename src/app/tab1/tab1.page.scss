@@ -1,0 +1,168 @@
+/* Estilos para la card de pantalla completa */
+.full-width-card {
+  width: 100%;   /* La card ocupa todo el ancho de la pantalla */
+  max-width: 100%; /* Asegura que ocupe el 100% del ancho */
+  height: auto;  /* Deja que la altura se ajuste automáticamente según el contenido */
+  margin: 20px auto; /* Margen superior e inferior para moverla hacia arriba */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de profundidad */
+  overflow: hidden;
+  background-color: #fff;  /* Fondo blanco para la card */
+}
+/* Estilo para el fondo del contenido específico de esta página */
+ion-content {
+  --background: #1e3a5f;  /* Fondo gris claro para todo el contenido */
+  padding: 16px;  /* Añadir algo de relleno alrededor del contenido */
+}
+/* Estilo para la imagen de la card */
+.card-image-container {
+  width: 100%;   /* La card ocupa todo el ancho de la pantalla */
+  max-width: 100%; /* Asegura que ocupe el 100% del ancho */
+  height: auto;  /* Deja que la altura se ajuste automáticamente según el contenido */
+  background-color: #fff;  /* Fondo blanco para la card */
+}
+
+.card-image-container img {
+  width: 100%; /* La imagen ocupa todo el ancho de la card */
+  height: 100%; /* La imagen ocupa el 100% de la altura de la card */
+  object-fit: cover;  /* La imagen cubre el área sin distorsionarse */
+}
+
+/* Estilo del header de la tarjeta */
+ion-card-header {
+  background-color: #007bff;  /* Fondo azul para contrastar con el navbar */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+/* Estilos para los detalles del producto */
+.product-details {
+  background-color: #f9f9f9; /* Fondo gris claro */
+  padding: 20px;  /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 20px;
+}
+
+.product-details h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;  /* Azul para el título */
+  margin-bottom: 15px;
+}
+
+.product-details ul {
+  list-style-type: none; /* Quitar los puntos de lista */
+  padding: 0; /* Quitar el padding por defecto */
+}
+
+.product-details li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+.product-details strong {
+  color: #007bff; /* Resaltar los títulos con color azul */
+}
+
+ion-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilo del contenido de la tarjeta */
+ion-card-content {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo para la imagen anclada en la parte superior */
+.sticky-image {
+  position: relative;
+  margin-top: 65px;
+  width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo */
+}
+
+/* Estilo para la tarjeta con imagen a la izquierda y texto a la derecha */
+.flex-card {
+  display: flex;
+  flex-direction: row; /* Coloca la imagen y el texto en una fila (horizontalmente) */
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  padding: 16px;
+  margin-bottom: 16px; /* Espacio inferior entre tarjetas */
+  background-color: #f7f7f7; /* Color de fondo gris claro para el contenedor de la card */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.card-image-container {
+  margin-right: 16px; /* Añadir espacio entre la imagen y el texto */
+}
+
+.card-text {
+  flex: 1; /* El texto ocupa el espacio restante */
+  color: #333; /* Color de texto para que contraste bien */
+}
+
+.card-text h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff; /* Color azul para el título de la card */
+}
+
+.card-text p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #666; /* Gris suave para el texto del precio */
+}
+
+/* Modificaciones para el botón de "Ver más" */
+ion-button {
+  background-color: #007bff;  /* Azul para el botón */
+  color: white;
+  border-radius: 4px;  /* Bordes redondeados en el botón */
+  font-weight: bold;
+}
+
+ion-button:hover {
+  background-color: #0056b3;  /* Color más oscuro al pasar el mouse */
+}
+
+/* Ajustes generales para el navbar */
+.custom-navbar {
+  background-color: #007bff;  /* Azul para el navbar */
+  color: white;  /* Texto blanco en el navbar */
+}
+
+.navbar-image {
+  width: 120px;  /* Ajusta el tamaño del logo del navbar */
+  height: auto;
+  margin-left: 10px;
+}
+
+ion-title {
+  color: white;  /* Color blanco para el título */
+  font-weight: bold;
+}
+
+/* Asegura que los elementos en el navbar tengan buen contraste */
+ion-buttons ion-button {
+  color: white; /* Iconos y botones en blanco */
+}
+
+ion-menu {
+  --background: #ffffff; /* Fondo blanco para el menú lateral */
+}
+
+ion-menu-toggle ion-item {
+  --color: #007bff; /* Color de los elementos del menú en azul */
+}
+
+ion-menu-toggle ion-item.selected {
+  background-color: #007bff;  /* Fondo azul para el item seleccionado */
+  color: white;  /* Texto blanco cuando el item está seleccionado */
+}

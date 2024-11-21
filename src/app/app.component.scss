@@ -1,0 +1,199 @@
+
+/* Estilos generales del menú lateral */
+ion-menu {
+  --background: #007bff; /* Fondo azul para el menú */
+  --color: white; /* Texto en blanco */
+  --width: 250px; /* Ancho del menú */
+  --border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo del encabezado del menú */
+ion-header {
+  --background: #0056b3; /* Un azul más oscuro para el encabezado */
+  --color: white; /* Texto blanco en el encabezado */
+  ion-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+/* Estilo de los elementos del menú */
+ion-menu-toggle {
+  display: block;
+  width: 100%;
+}
+
+ion-item {
+  --background: transparent; /* Fondo transparente para que no sobresalga del fondo del menú */
+  --color: white; /* Color blanco para el texto */
+  --min-height: 50px; /* Tamaño de los elementos */
+  --padding-start: 16px; /* Espaciado a la izquierda */
+  --padding-end: 16px; /* Espaciado a la derecha */
+  ion-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  ion-icon {
+    font-size: 24px;
+    margin-right: 16px; /* Espacio entre icono y texto */
+  }
+
+  /* Efecto hover para resaltar */
+  &:hover {
+    --background: #0056b3; /* Azul más oscuro al pasar el ratón */
+    --color: white;
+  }
+
+  /* Resaltar elemento seleccionado */
+  &.selected {
+    --background: #0056b3; /* Color de fondo cuando está seleccionado */
+    ion-icon,
+    ion-label {
+      color: #ffffff; /* Blanco cuando está seleccionado */
+    }
+  }
+}
+
+/* Diseño del contenido del menú */
+ion-content {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+/* Estilo del borde de separación */
+ion-item-divider {
+  --background: #e6e6e6; /* Color sutil para el separador */
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+
+ion-icon {
+    font-size: 22px; /* Tamaño de los íconos */
+}
+
+
+ion-menu ion-content {
+    --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  }
+  
+  ion-menu.md ion-content {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+  }
+  
+  ion-menu.md ion-list {
+    padding: 20px 0;
+  }
+  
+  ion-menu.md ion-note {
+    margin-bottom: 30px;
+  }
+  
+  ion-menu.md ion-list-header,
+  ion-menu.md ion-note {
+    padding-left: 10px;
+  }
+  
+  ion-menu.md ion-list#inbox-list {
+    border-bottom: 1px solid var(--ion-background-color-step-150, #0055ff);
+  }
+  
+  ion-menu.md ion-list#inbox-list ion-list-header {
+    font-size: 22px;
+    font-weight: 600;
+  
+    min-height: 20px;
+  }
+  
+  ion-menu.md ion-list#labels-list ion-list-header {
+    font-size: 16px;
+  
+    margin-bottom: 18px;
+  
+    color: #757575;
+  
+    min-height: 26px;
+  }
+  
+  ion-menu.md ion-item {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    border-radius: 4px;
+  }
+  
+  ion-menu.md ion-item.selected {
+    --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  }
+  
+  ion-menu.md ion-item.selected ion-icon {
+    color: black;
+  }
+  
+  ion-menu.md ion-item ion-icon {
+    color: #616e7e;
+  }
+  
+  ion-menu.md ion-item ion-label {
+    font-weight: 500;
+  }
+  
+  ion-menu.ios ion-content {
+    --padding-bottom: 20px;
+  }
+  
+  ion-menu.ios ion-list {
+    padding: 20px 0 0 0;
+  }
+  
+  ion-menu.ios ion-note {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  
+  ion-menu.ios ion-item {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --min-height: 50px;
+  }
+  
+  ion-menu.ios ion-item.selected ion-icon {
+    color: var(--ion-color-primary);
+  }
+  
+  ion-menu.ios ion-item ion-icon {
+    font-size: 24px;
+    color: #73849a;
+  }
+  
+  ion-menu.ios ion-list#labels-list ion-list-header {
+    margin-bottom: 8px;
+  }
+  
+  ion-menu.ios ion-list-header,
+  ion-menu.ios ion-note {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  ion-menu.ios ion-note {
+    margin-bottom: 8px;
+  }
+  
+  ion-note {
+    display: inline-block;
+    font-size: 16px;
+  
+    color: var(--ion-color-medium-shade);
+  }
+  
+  ion-item.selected {
+    --color: var(--ion-color-primary);
+  }
+   
+  
+  
